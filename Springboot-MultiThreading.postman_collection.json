@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "55eb6500-b635-4d58-a147-6bddc20fa37b",
+		"name": "Springboot-MultiThreading",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33936986"
+	},
+	"item": [
+		{
+			"name": "Upload Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Porjects/localRepo.vision.tech/spring2.2j8-multithread/data/user.csv"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Porjects/localRepo.vision.tech/spring2.2j8-multithread/data/user2.csv"
+						}
+					]
+				},
+				"url": "http://localhost:9191/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9191/users"
+			},
+			"response": []
+		},
+		{
+			"name": "multi-thread",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9191/users/threads"
+			},
+			"response": []
+		}
+	]
+}
